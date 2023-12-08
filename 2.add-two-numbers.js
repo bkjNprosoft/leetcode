@@ -1,5 +1,5 @@
 /*
- * @lc app=leetcode id=2 lang=typescript
+ * @lc app=leetcode id=2 lang=javascript
  *
  * [2] Add Two Numbers
  */
@@ -7,22 +7,20 @@
 // @lc code=start
 /**
  * Definition for singly-linked list.
-class ListNode {
-    val: number
-    next: ListNode | null
-    constructor(val?: number, next?: ListNode | null) {
-        this.val = (val===undefined ? 0 : val)
-        this.next = (next===undefined ? null : next)
-    }
-}
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
  */
-
-type ListNodeType = ListNode | null;
-
-function addTwoNumbers(l1: ListNodeType, l2: ListNodeType): ListNodeType {
-  let currentL1: ListNodeType = l1, currentL2: ListNodeType = l2, nextAddNum: number = 0;
+/**
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @return {ListNode}
+ */
+const addTwoNumbers = function(l1, l2) {
+  let currentL1 = l1, currentL2 = l2, nextAddNum = 0;
   const headNode = new ListNode();
-  let currentNode = headNode, val1: number, val2: number, sum: number;
+  let currentNode = headNode, val1, val2, sum;
 
   while(currentL1 || currentL2) {
     val1 = currentL1 ? currentL1.val : 0;

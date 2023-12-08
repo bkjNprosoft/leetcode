@@ -1,12 +1,16 @@
 /*
- * @lc app=leetcode id=3 lang=typescript
+ * @lc app=leetcode id=3 lang=javascript
  *
  * [3] Longest Substring Without Repeating Characters
  */
 
 // @lc code=start
-function lengthOfLongestSubstring(s: string): number {
-  const scanner: string[] = [];
+/**
+ * @param {string} s
+ * @return {number}
+ */
+const lengthOfLongestSubstring = function(s) {
+  const scanner = [];
   let longest = 0;
 
   for (const char of s) {
