@@ -37,11 +37,6 @@ function expandAroundCenter(str, left, right) {
 }
 // @lc code=end
 
-// console.log(longestPalindrome('babadoioioi')); // oioio, odd
-// console.log(longestPalindrome('cbbdcicici')); // cicic, odd
-console.log(longestPalindrome('cabbab')); // abba, even
-// console.log(longestPalindrome('ccbbdd'));
-
 /* 
   반복되는 문자 중에 시작과 끝이 같은 문자 중에 가장 긴 문자를 찾는 문제이다.
 
@@ -71,3 +66,8 @@ console.log(longestPalindrome('cabbab')); // abba, even
   index 0의 'c'와 index 5의 'b'는 같지 않으므로
   index 1 ~ 4에 해당하는 'abba'를 리턴한다.
  */
+
+// console.log(longestPalindrome('babadoioioi')); // oioio, odd
+// console.log(longestPalindrome('cbbdcicici')); // cicic, odd
+console.log(longestPalindrome('cabbab')); // abba, even
+// console.log(longestPalindrome('ccbbdd'));

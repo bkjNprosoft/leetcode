@@ -53,7 +53,7 @@ const addTwoNumbers = function(l1, l2) {
   [2->4->3] + [5->6->4] => 342 + 465 = 807 => [7->0->8]
  */
 
-  // vfyodorov님의 풀이, 재귀를 활용한 심플한 풀이!
+// vfyodorov님의 풀이, 재귀를 활용한 심플한 풀이!
 // const addTwoNumbers = function (l1, l2) {
 //   const iter = (n1, n2, rest = 0) => {
 //     if (!n1 && !n2 && !rest) return null;
