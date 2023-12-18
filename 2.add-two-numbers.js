@@ -54,16 +54,17 @@ const addTwoNumbers = function(l1, l2) {
  */
 
 // vfyodorov님의 풀이, 재귀를 활용한 심플한 풀이!
-// const addTwoNumbers = function (l1, l2) {
-//   const iter = (n1, n2, rest = 0) => {
-//     if (!n1 && !n2 && !rest) return null;
-//     const newVal = (n1?.val || 0) + (n2?.val || 0) + rest;
-//     const nextNode = iter(n1?.next, n2?.next, Math.floor(newVal / 10));
-//     return new ListNode(newVal % 10, nextNode);
-//   }
-//   return iter(l1, l2);
-// };
+const addTwoNumbers2 = function (l1, l2) {
+  const iter = (n1, n2, rest = 0) => {
+    if (!n1 && !n2 && !rest) return null;
+    const newVal = (n1?.val || 0) + (n2?.val || 0) + rest;
+    const nextNode = iter(n1?.next, n2?.next, Math.floor(newVal / 10));
+    return new ListNode(newVal % 10, nextNode);
+  }
+  return iter(l1, l2);
+};
 
+// 노드를 배열로, 배열을 노드로 변환하여 확인하기 위한 소스 코드를 작성하였다.
 /**
  * @param {number} val 
  * @param {ListNode} next 
@@ -110,8 +111,10 @@ function ListNodeToArray(listNode) {
 }
 
 let numbers;
-// numbers = addTwoNumbers(arrayToListNode([2,4,3]), arrayToListNode([5,6,4]));
-// numbers = addTwoNumbers(arrayToListNode([9,9,9,9,9,9,9]), arrayToListNode([9,9,9,9]));
+numbers = addTwoNumbers(arrayToListNode([2,4,3]), arrayToListNode([5,6,4]));
+console.log(ListNodeToArray(numbers)); // [ 7, 0, 8 ]
+numbers = addTwoNumbers(arrayToListNode([9,9,9,9,9,9,9]), arrayToListNode([9,9,9,9]));
+console.log(ListNodeToArray(numbers)); // [ 8, 9, 9, 9, 0, 0, 0, 1 ]
 numbers = addTwoNumbers(arrayToListNode([2,4,9]), arrayToListNode([5,6,4,9]));
-console.log(ListNodeToArray(numbers));
+console.log(ListNodeToArray(numbers)); // [ 7, 0, 4, 0, 1 ]
 

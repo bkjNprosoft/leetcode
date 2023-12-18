@@ -37,8 +37,6 @@ function createTable(rows) {
 
 // @lc code=end
 
-console.log(convert('PAYPALISHIRING', 3)); // PAHNAPLSIIGYIR
-
 /**
  * "PAYPALISHIRING" 문자열은 다음과 같이 지정된 수의 행에 지그재그 패턴으로
  * 작성된다.
@@ -50,13 +48,15 @@ console.log(convert('PAYPALISHIRING', 3)); // PAHNAPLSIIGYIR
  * s는 문자열, numRows는 행의 개수이다. 지그재그는 numRows의 영향을 받는다.
  */
 
+console.log(convert('PAYPALISHIRING', 3)); // PAHNAPLSIIGYIR
+
 // 두번 째 풀이, 지그재그 패턴 문자열을 만들고 합치는 방식의 convert
 /**
  * @param {string} s
  * @param {number} numRows
  * @return {string}
  */
-const convert1 = function (s, numRows) {
+const convert2 = function (s, numRows) {
   if (numRows < 1 || s.length < numRows) return s;
   const table = convertZigzagPattern(s, numRows)
   return table.reduce((acc, val) => acc + val.join(''), '');
@@ -101,10 +101,9 @@ function convertZigzagPattern(str, numRows) {
   return table;
 }
 
-console.log(convert1('PAYPALISHIRING', 5)); // PHASIYIRPLIGAN
-// console.log(convert('ABC', 1)); // ABC
+console.log(convert2('PAYPALISHIRING', 5)); // PHASIYIRPLIGAN
+console.log(convert2('ABC', 1)); // ABC
 console.log('-----------------------------------');
-
 
 // 지그재그 패턴으로 변환된 문자열에 대해 출력하고 싶어서 아래와 같이 구현하였다.
 /**
@@ -143,7 +142,6 @@ console.log(tableConvertToString(result));
  */
 
 /**
- * 인수의 문자 코드 값이 한글 코드의 범위에 포함 유무를 리턴
  * @param {string} char 
  * @returns {boolean} true: 한글
  */
@@ -163,7 +161,6 @@ function hasHangulCharacter(char) {
 
 result = convertZigzagPattern('반갑습니다저는한국사람입니다', 5);
 console.log(tableConvertToString(result));
-
 /* -- console log --
   반      국
   갑    한사

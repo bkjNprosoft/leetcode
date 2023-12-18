@@ -13,7 +13,6 @@ const isPalindrome = function(x) {
   if (x < 0) return false;
   const reverseX = reverseNumber(x);
   return x == reverseX;
-  // return x == Number(x.toString().split('').reverse().join(''));
 };
 
 /**
@@ -30,3 +29,9 @@ function reverseNumber(n) {
 }
 // @lc code=end
 
+// 다른 풀이 방법
+function isPalindrome2 (x) {
+  return x == Number(x.toString().split('').reverse().join(''));
+}
+
+console.log(isPalindrome2(121));
