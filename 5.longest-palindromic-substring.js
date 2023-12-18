@@ -71,7 +71,7 @@ function expandAroundCenter(str, left, right) {
   index 1 ~ 4에 해당하는 'abba'를 리턴한다.
  */
 
-// console.log(longestPalindrome('babadoioioi')); // oioio, odd
-// console.log(longestPalindrome('cbbdcicici')); // cicic, odd
+console.log(longestPalindrome('babadoioioi')); // oioio, odd
+console.log(longestPalindrome('cbbdcicici')); // cicic, odd
 console.log(longestPalindrome('cabbab')); // abba, even
-// console.log(longestPalindrome('ccbbdd'));
+console.log(longestPalindrome('ccbbdd')); // cc

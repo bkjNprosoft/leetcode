@@ -37,8 +37,7 @@ function reverseTheNumber(num) {
  * 0 => 0, -0 => -0, 양의 수 => 1, 음의 수 => -1, 그외 => NaN
  * 다만 숫자 값의 문자열은 변환된다. 예) '-1' => -1로 변환하여 판단
  * 
- * Math.sign을 쓰지 않았다면 String.includes('-')을 사용하는 방식으로
- * 사용했을 것이다.
+ * Math.sign 대신 String.includes('-')을 사용하는 방식으로도 부호 판단이 가능하다.
  */
 
 console.log(reverse(44002233)); // 33220044
