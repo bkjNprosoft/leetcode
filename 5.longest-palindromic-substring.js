@@ -74,4 +74,4 @@ function expandAroundCenter(str, left, right) {
 console.log(longestPalindrome('babadoioioi')); // oioio, odd
 console.log(longestPalindrome('cbbdcicici')); // cicic, odd
 console.log(longestPalindrome('cabbab')); // abba, even
-console.log(longestPalindrome('ccbbdd')); // cc
+console.log(longestPalindrome('ccbbdd')); // cc, even
