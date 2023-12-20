@@ -29,9 +29,20 @@ function reverseNumber(n) {
 }
 // @lc code=end
 
+/**
+ * 정수 x가 주어진다. x를 좌우 반전 시켰을 때 
+ * 이전과 같으면 true 아니면 false를 반환해야 한다.
+ */
+console.log(isPalindrome(121)); // true
+console.log(isPalindrome(-121)); // false
+console.log(isPalindrome(144)); // false
+console.log('-----------------------------------');
+
 // 다른 풀이 방법
 function isPalindrome2 (x) {
   return x == Number(x.toString().split('').reverse().join(''));
 }
 
-console.log(isPalindrome2(121));
+console.log(isPalindrome2(121)); // true
+console.log(isPalindrome(-121)); // false
+console.log(isPalindrome(144)); // false
