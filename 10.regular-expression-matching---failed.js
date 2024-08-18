@@ -4,6 +4,19 @@
  * [10] Regular Expression Matching
  */
 
+/**
+ * 입력 문자열 s와 패턴 p가 주어진다. '.' 및 '*'를 지원하는
+ * 정규식이 일치하는지 구현해야 한다.
+ * '.'는 단일 문자와 일치한다.
+ * '*'는 앞의 요소 중 0개 이상과 일치한다.
+ *
+ * s는 소문자 영문자만 포함한다.
+ * p는 소문자 영문자, '.', '*'만 포함된다.
+ * '*' 캐릭터의 각 등장마다 보장되며, 일치하는 이전 유효한 캐릭터가 있다.
+ *
+ * 문제가 이해되지 않아서 다른 사람의 풀이를 확인하고 동작 원리를 분석해보았다.
+ */
+
 // @lc code=start
 /**
  * @param {string} s
@@ -11,29 +24,6 @@
  * @return {boolean}
  */
 const isMatch = function (s, p) {
-
-}
-// @lc code=end
-
-/**
- * 입력 문자열 s와 패턴 p가 주어진다. '.' 및 '*'를 지원하는 
- * 정규식이 일치하는지 구현해야 한다.
- * '.'는 단일 문자와 일치한다.
- * '*'는 앞의 요소 중 0개 이상과 일치한다.
- * 
- * s는 소문자 영문자만 포함한다.
- * p는 소문자 영문자, '.', '*'만 포함된다.
- * '*' 캐릭터의 각 등장마다 보장되며, 일치하는 이전 유효한 캐릭터가 있다.
- * 
- * 문제가 이해되지 않아서 다른 사람의 풀이를 확인하고 동작 원리를 분석해보았다.
- */
-
-/**
- * @param {string} s
- * @param {string} p
- * @return {boolean}
- */
-const isMatch2 = function (s, p) {
   // corner case
   if (s == null || p == null) return false;
 
@@ -108,6 +98,7 @@ const isMatch2 = function (s, p) {
   }
 
   return M[sLength][pLength];
-};
+}
+// @lc code=end
 
-console.log(isMatch2('aab', 'a*a*b'));
+console.log(isMatch('aab', 'a*a*b'));
