@@ -31,9 +31,6 @@ const mergeTwoLists = function(list1, list2) {
     return null;
   }
 
-  const list1First = list1;
-  const list2First = list2;
-
   let result = new ListNode(0, null);
   const first = result;
 

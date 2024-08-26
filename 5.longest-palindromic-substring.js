@@ -39,6 +39,7 @@ function expandAroundCenter(str, left, right) {
 // @lc code=end
 
 /*
+  * 풀이에 실패하여 다른 사람의 풀이를 분석
   문제에 대한 이해가 부족하여 정해진 시간 내에 풀지 못해서 다른 사람의 풀이를
   확인했다. 따라서 이해를 위해 동작 원리를 분석해 보았다.
 
