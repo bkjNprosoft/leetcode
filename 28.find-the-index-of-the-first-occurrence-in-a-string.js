@@ -13,7 +13,7 @@
 const strStr = function(haystack, needle) {
   // 처음 푼 방식. JS라면 메서드를 사용하여 쉽게 풀 수 있다.
   return haystack.indexOf(needle);
-  
+
   // 메서드를 사용하지 않고 원초적인 방법으로 푼 풀이
   // let findSuccess = false;
   // for(let i = 0; i < haystack.length; i++) {

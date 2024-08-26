@@ -7,9 +7,9 @@
 // @lc code=start
 /**
  * Definition for a binary tree node.
- * @param {TreeNode?} left 
+ * @param {TreeNode?} left
  * @param {TreeNode?} right
- * @param {number?} val 
+ * @param {number?} val
  */
 function TreeNode(val, left, right) {
   this.val = (val === undefined ? 0 : val);

@@ -5,11 +5,11 @@
  */
 
 // @lc code=start
-/** 
- * Definition for a binary tree node. 
- * @param {number?} val 
- * @param {TreeNode?} left 
- * @param {TreeNode?} right 
+/**
+ * Definition for a binary tree node.
+ * @param {number?} val
+ * @param {TreeNode?} left
+ * @param {TreeNode?} right
  * */
 function TreeNode(val, left, right) {
   this.val = (val === undefined ? 0 : val)
@@ -26,15 +26,15 @@ const isSameTree = function(p, q) {
   if (p == null && q == null) return true;
   // p또는 q 중 하나만 null이면 서로 다르다. 또한 값이 같지 않은 경우
   if (p == null || q == null || p.val != q.val) return false;
-  // 소라 같은 잎노드를 탐색한다.
+  // 같은 잎노드를 계속해서 탐색한다.
   return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
 };
 // @lc code=end
 
 /**
  * 다른 사람의 풀이, 재귀가 아닌 다른 방식의 풀이
- * @param {TreeNode} p 
- * @param {TreeNode} q 
+ * @param {TreeNode} p
+ * @param {TreeNode} q
  */
 function isSameTree2(p, q) {
   const queue = [p, q];

@@ -5,10 +5,10 @@
  */
 
 // @lc code=start
-/** 
- * Definition for singly-linked list. 
- * @param {number} val 
- * @param {ListNode?} next 
+/**
+ * Definition for singly-linked list.
+ * @param {number} val
+ * @param {ListNode?} next
  * */
 function ListNode(val, next) {
   this.val = (val === undefined ? 0 : val)
@@ -25,12 +25,12 @@ const deleteDuplicates = function(head) {
     const nextNode = currNode.next;
     if (currNode.val == nextNode.val) {
       if (nextNode.next != null) {
-        // 현재 노드와 다음 노드의 숫자가 같고, 다다음 노드가 있으면 
+        // 현재 노드와 다음 노드의 숫자가 같고, 다다음 노드가 있으면
         // 다음 연결 노드는 연결을 건너 뛰고 다다음 노드를 연결시킨다.
-        currNode.next = nextNode.next; 
+        currNode.next = nextNode.next;
       } else {
         // 현재 노드와 마지막 꼬리 노드의 숫자가 같으면 꼬리와 연결을 끊는다.
-        currNode.next = null; 
+        currNode.next = null;
       }
     } else {
       // 현재 노드와 다음 노드의 값이 다르다면, 다음 노드를 탐색한다.
@@ -47,12 +47,12 @@ console.log(ListNodeToArray(deleteDuplicates(arrayToListNode([1,1,2,3,3]))));
 
 /**
  * 배열을 노드로 변환하는 함수
- * @param {number[]} array 
+ * @param {number[]} array
  * @returns {ListNode}
  */
 function arrayToListNode(array) {
   if (!array || !(array instanceof Array)) return null;
-  
+
   const headNode = new ListNode(array[0]);
   let currentNode = headNode;
   for (let i = 1; i < array.length; i++) {
@@ -67,7 +67,7 @@ function arrayToListNode(array) {
 
 /**
  * 노드를 배열로 변환하는 함수
- * @param {ListNode} listNode 
+ * @param {ListNode} listNode
  * @returns {number[]}
  */
 function ListNodeToArray(listNode) {
