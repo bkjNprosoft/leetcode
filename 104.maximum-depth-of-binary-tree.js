@@ -42,5 +42,5 @@ function search(a, b, depth) {
  */
 const maxDepth2 = (root) => {
   if (!root) return 0;
-  return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
+  return Math.max(maxDepth2(root.left), maxDepth2(root.right)) + 1;
 }
