@@ -17,6 +17,9 @@ function TreeNode(val, left, right) {
  * @return {boolean}
  */
 const hasPathSum = function(root, targetSum) {
+  // root가 [], targetSum이 0인 경우
+  if(!root && targetSum == 0) return false;
+
   // 현재 노드가 null
   if (!root) return targetSum == 0;
 
