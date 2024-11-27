@@ -10,14 +10,21 @@
  * @return {number[]}
  */
 const getRow = function(rowIndex) {
+  // 배열의 공간을 확보, 모든 데이터를 0으로 초기화
   const result = new Array(rowIndex + 1).fill(0);
+
+  // 첫 번째 요소를 1로 설정한다.
   result[0] = 1;
 
+  // 첫 번째 요소를 제외한 나머지 요소를 순차 접근
   for (let i = 1; i <= rowIndex; i++) {
+
+    // i 번째 요소부터 두 번째 요소까지 더해준다.
     for (let j = i; j >= 1; j--) {
       result[j] += result[j - 1];
     }
   }
+
   return result;
 };
 // @lc code=end
