@@ -18,8 +18,8 @@ function ListNode(val) {
  */
 const getIntersectionNode = function(headA, headB) {
   const headAList = [];
-  
-  // haed A가 되었든 B가 되었든 하나의 노드 링크의 모든 데이터를 배열에 저장
+
+  // head A가 되었든 B가 되었든 하나의 노드 링크의 모든 데이터를 배열에 저장
   while (headA != null) {
     headAList.push(headA);
     headA = headA.next;
@@ -27,9 +27,9 @@ const getIntersectionNode = function(headA, headB) {
 
   while (headB != null) {
     // 저장된 노드 링크에 같은 것이 있으면 교차점이므로 해당 데이터를 리턴
-    const sameMode = headAList.find(ele => ele === headB)
-    if (sameMode) {
-      return sameMode;
+    const sameNode = headAList.find(ele => ele === headB)
+    if (sameNode) {
+      return sameNode;
     }
 
     headB = headB.next;
