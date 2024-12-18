@@ -11,12 +11,14 @@
  */
 const titleToNumber = function(columnTitle) {
   const codeA = 'A'.charCodeAt(); // 65
+  const length = columnTitle.length;
   let result = 0;
 
-  for (let i = 0; i < columnTitle.length; i++) {
-    const char = columnTitle[i];
-    // 자리수에 따라 26의 제곱한 숫자를 더한다, A는 1부터 시작이라 1을 더해준다.
-    result = result * Math.pow(26, i) + char.charCodeAt() - codeA + 1;
+  for (let i = 0; i < length; i++) {
+    // A는 1부터 시작이라 1을 더해준다.
+    const charNum = columnTitle.charCodeAt(i) - codeA + 1;
+    // 이전 값 자리올림으로 26을 곱하고, 새로운 값을 더한다 (1 ~ 25)
+    result = result * 26 + charNum;
   }
 
   return result;
