@@ -5,11 +5,11 @@
 --
 
 -- @lc code=start
-# personId를 기준으로 outer join을 사용하여
-# 일치하지 않는 레코드의 값은 null으로 채워진다.
 SELECT firstName, lastName, city, state
-FROM Person AS A
-LEFT JOIN Address AS B
-ON A.personId = B.personId
+FROM Person AS P1
+LEFT JOIN Address AS A1
+ON P1.personId = A1.personId
 -- @lc code=end
 
+-- personId를 기준으로 outer join을 사용하여
+-- 일치하지 않는 레코드의 값은 null으로 채워진다.
