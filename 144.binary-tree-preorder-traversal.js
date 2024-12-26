@@ -39,9 +39,9 @@ function traversal(node, array) {
     return;
   }
 
-  array.push(node.val);
 
   // 전위 순회 순서인 left -> root -> right 순으로 탐색한다.
+  array.push(node.val);
   traversal(node.left, array);
   traversal(node.right, array);
 }
