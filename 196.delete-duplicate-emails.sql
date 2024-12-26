@@ -7,6 +7,7 @@
 -- @lc code=start
 
 -- 내가 푼 방법
+DELETE p1 FROM Person AS p1
 JOIN Person AS p2
 ON p1.email = p2.email
 WHERE p1.id > p2.id
@@ -29,4 +30,4 @@ WHERE p1.id > p2.id
 
 -- @lc code=end
 
--- DELETE p1 FROM Person AS p1
+
