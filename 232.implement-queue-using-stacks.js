@@ -6,7 +6,7 @@
 
 // @lc code=start
 
-const MyQueue = function() {
+const MyQueue = function () {
   this.data = [];
 };
 
@@ -15,7 +15,7 @@ const MyQueue = function() {
  * @return {void}
  * 맨 뒤에 요소를 추가
  */
-MyQueue.prototype.push = function(x) {
+MyQueue.prototype.push = function (x) {
   this.data.push(x);
 };
 
@@ -23,7 +23,7 @@ MyQueue.prototype.push = function(x) {
  * @return {number}
  * 맨 앞 요소를 반환하고 제거(먼저 들어온 데이터가 먼저 나간다.)
  */
-MyQueue.prototype.pop = function() {
+MyQueue.prototype.pop = function () {
   return this.data.shift();
 };
 
@@ -31,7 +31,7 @@ MyQueue.prototype.pop = function() {
  * @return {number}
  * 맨 앞 요소를 반환
  */
-MyQueue.prototype.peek = function() {
+MyQueue.prototype.peek = function () {
   return this.data[0];
 };
 
@@ -39,7 +39,7 @@ MyQueue.prototype.peek = function() {
  * @return {boolean}
  * 데이터가 비어있는지 확인
  */
-MyQueue.prototype.empty = function() {
+MyQueue.prototype.empty = function () {
   return this.data.length === 0;
 };
 
