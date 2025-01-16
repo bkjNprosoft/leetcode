@@ -10,7 +10,6 @@
  * @return {boolean}
  */
 const containsDuplicate = function(nums) {
-
   // 처음 작성한 풀이
   // const obj = {};
   // for (const num of nums) {
