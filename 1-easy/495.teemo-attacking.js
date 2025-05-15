@@ -62,7 +62,7 @@ const findPoisonedDuration2 = (timeSeries, duration) => {
 };
 
 /**
- * ChatGPT 3.5의 풀이. 위 풀이와 다를 바 없지만 조건식의 차이가 있다.
+ * GPT-4o의 풀이. 위 풀이와 다를 바 없지만 조건식의 차이가 있다.
  * @param {number[]} timeSeries
  * @param {number} duration
  * @return {number}

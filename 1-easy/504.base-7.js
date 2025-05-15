@@ -6,6 +6,7 @@
 
 // @lc code=start
 /**
+ * 10진수로 입력 값이 들어오고, 7진수 문자열로 변환하여 반환해야하는 문제이다.
  * @param {number} num
  * @return {string}
  */
@@ -29,7 +30,7 @@ const convertToBase7 = (num) => {
 };
 // @lc code=end
 
-console.log(convertToBase7(100)); // 202
+console.log(convertToBase7(100)); // 202 (7^2 * 2) + (7^1 * 0) + 2 = 98 + 0 + 2
 console.log(convertToBase7(-7)); // -10
 console.log(convertToBase7(0)); // 0
 console.log(convertToBase7(-8)); // -11

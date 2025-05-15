@@ -45,7 +45,7 @@ console.log(nextGreaterElement([2, 4], [1, 2, 3, 4]));
 console.log(nextGreaterElement([1, 3, 5, 2, 4], [6, 5, 4, 3, 2, 1, 7]));
 
 /**
- * ChatGPT 3.5의 풀이, 스택과 해시맵으로 해결하였다. 처리 속도가 더 빠르다.
+ * GPT-4o의 풀이, 스택과 해시맵으로 해결하였다. 처리 속도가 더 빠르다.
  * @param {number[]} nums1
  * @param {number[]} nums2
  * @return {number[]}

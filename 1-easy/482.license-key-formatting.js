@@ -51,7 +51,7 @@ console.log(licenseKeyFormatting('0123456789', 10));
 
 // @lc code=start
 /**
- * ChatGPT 3.5의 풀이, 처리 속도가 빠르다.
+ * GPT-4o의 풀이, 처리 속도가 빠르다.
  * start 포인터와 slice를 활용하여 반복 탐색 횟수를 줄인 방법이 좋아보인다.
  * @param {string} s
  * @param {number} k

@@ -50,7 +50,7 @@ console.log(findWords(["adsdf","sfd"])); // [ 'adsdf', 'sfd' ]
 
 // @lc code=start
 /**
- * ChatGPT 3.5의 풀이, 가독성이 좋고 깔끔한 코드이다.
+ * GPT-4o의 풀이, 가독성이 좋고 깔끔한 코드이다.
  * isInSameRow 함수에서 word를 소문자로 바꾸는 과정과
  * words.filter에서 함수를 OR 연산으로 실행하고 있다는 점이 처리 속도에 조금 아쉽다.
  *
@@ -81,7 +81,7 @@ const findWords2 = (words) => {
 
 // @lc code=start
 /**
- * ChatGPT 3.5의 풀이에 대한 아쉬움을 개선해보았다.
+ * GPT-4o의 풀이에 대한 아쉬움을 개선해보았다.
  * @param {string[]} words
  * @return {string[]}
  */
