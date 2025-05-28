@@ -36,7 +36,7 @@ console.log(fib(7)); // 13
 
 
 /**
- * Chat 4.1의 풀이, 재귀와 메모이제이션을 활용한 방법이다.
+ * GPT-4o의 풀이, 재귀와 메모이제이션을 활용한 방법이다.
  * @param {number} n
  * @param {Object} memo
  * @return {number}
