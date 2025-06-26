@@ -16,6 +16,10 @@
  *
  * 모든 연산을 수행한 후, 행렬에서 가장 큰 값을 가지는 원소가 몇 개인지 세어서 반환
  * 해야 한다.
+ *
+ * 69/69 cases passed (1 ms)
+ * Your runtime beats 77.65 % of javascript submissions
+ * Your memory usage beats 42.35 % of javascript submissions (57 MB)
  * @param {number} m
  * @param {number} n
  * @param {number[][]} ops
