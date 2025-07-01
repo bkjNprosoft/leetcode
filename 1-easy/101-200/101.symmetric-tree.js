@@ -12,7 +12,8 @@ function TreeNode(val, left, right) {
 }
 
 /**
- * 이전에 풀이에 실패해서 다시 문제를 보고 의사코드를 먼저 작성하는 방식으로 풀어보았다.
+ * 과거에 실패했던 문제에 다시 도전한다.
+ *
  * 이진 트리가 주어지는데, 왼쪽 노드와 오른쪽 노드가 대칭을 이루는지 확인해야 한다.
  * @param {TreeNode} root
  * @return {boolean}
